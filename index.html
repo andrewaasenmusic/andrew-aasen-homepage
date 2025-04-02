@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Andrew Aasen</title>
-
-  <!-- Fancy fallback font: Playfair Display -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-
   <style>
     body {
+      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
-      font-family: 'Playfair Display', serif;
       background-color: #0a0a0a;
       color: #f5f5f5;
     }
-
     header {
-      background-color: #0a0a0a;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
-
     header h1 {
       font-size: 52px;
-      letter-spacing: 2px;
-      font-weight: 700;
       margin: 0;
+      letter-spacing: 2px;
     }
-
     section {
       padding: 60px 20px;
       max-width: 900px;
       margin: auto;
     }
-
     section h2 {
       font-size: 28px;
       margin-bottom: 20px;
     }
-
-    .cta-button {
-      background: #ffffff;
-      color: #000;
-      padding: 12px 30px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-
-    .spotify-faux {
-      background: linear-gradient(135deg, #1db954 0%, #191414 100%);
-      border-radius: 12px;
-      padding: 30px;
-      color: #fff;
+    .image-block {
       text-align: center;
+      margin-bottom: 40px;
     }
-
-    .spotify-faux h3 {
-      font-size: 24px;
-      margin-bottom: 10px;
+    .image-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
     }
-
-    .spotify-faux p {
-      font-size: 14px;
-      margin-bottom: 20px;
-      color: #d0d0d0;
+    .spotify-section {
+      text-align: center;
+      margin-bottom: 40px;
     }
-
+    .spotify-section iframe {
+      border-radius: 12px;
+      width: 100%;
+      max-width: 660px;
+      height: 152px;
+    }
     .spotify-link-button {
-      background: #fff;
-      color: #1db954;
+      display: inline-block;
+      background-color: #1db954;
+      color: #fff;
       padding: 10px 20px;
       font-weight: bold;
       text-decoration: none;
       border-radius: 25px;
-      display: inline-block;
+      margin-top: 20px;
     }
-
     .artist-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
     }
-
     .artist-card {
       background: #1a1a1a;
       padding: 20px;
       border-radius: 10px;
     }
-
     .artist-card h3 {
       margin-top: 0;
       font-size: 20px;
     }
-
     .artist-card p {
       font-size: 14px;
       color: #ccc;
     }
-
     footer {
       text-align: center;
       padding: 40px 20px;
       font-size: 14px;
       background-color: #000;
     }
-
     a {
-      color: #f5f5f5;
-      text-decoration: underline;
+      color: #1db954;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -123,16 +99,22 @@
   <section>
     <h2>Sound doesn't follow rules. Neither does Andrew Aasen.</h2>
     <p>Producer. Artist. Curator of The Collective. Ambient pop, digital soul, and something slower than trend cycles.</p>
-    <button class="cta-button">Listen Now</button>
   </section>
 
-  <section>
+  <section class="image-block">
+    <img src="FA50219F-5AEF-49F5-BB4C-0BE6BFFBABB1.png" alt="Andrew Aasen Official Spotify Look">
+  </section>
+
+  <section class="spotify-section">
     <h2>Official Playlist</h2>
-    <div class="spotify-faux">
-      <h3>This Is Andrew Aasen</h3>
-      <p>A curated selection of genre-warped ambient pop, with a little danger and a lot of silk.</p>
-      <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0kga8K" target="_blank" class="spotify-link-button">Play on Spotify</a>
-    </div>
+    <p>A curated selection of genre-warped ambient pop, with a little danger and a lot of silk.</p>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0kga8K" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    <br>
+    <a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc" target="_blank" class="spotify-link-button">View Artist Profile</a>
+  </section>
+
+  <section class="image-block">
+    <img src="6867D096-3EB9-4B08-86A0-310D5F2F190C.webp" alt="Yeah I’m Cute Teaser Image">
   </section>
 
   <section>
