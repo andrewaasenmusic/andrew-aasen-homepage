@@ -5,20 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrew Aasen</title>
 
-  <style>
-    @font-face {
-      font-family: 'Aasen';
-      src: url('fonts/aasen.woff2') format('woff2'),
-           url('fonts/aasen.woff') format('woff'),
-           url('fonts/aasen.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-    }
+  <!-- Fancy fallback font: Playfair Display -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 
+  <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Aasen', sans-serif;
+      font-family: 'Playfair Display', serif;
       background-color: #0a0a0a;
       color: #f5f5f5;
     }
@@ -30,9 +24,9 @@
     }
 
     header h1 {
-      font-size: 48px;
-      letter-spacing: 3px;
-      font-weight: 600;
+      font-size: 52px;
+      letter-spacing: 2px;
+      font-weight: 700;
       margin: 0;
     }
 
@@ -55,6 +49,35 @@
       border: none;
       cursor: pointer;
       margin-top: 20px;
+    }
+
+    .spotify-faux {
+      background: linear-gradient(135deg, #1db954 0%, #191414 100%);
+      border-radius: 12px;
+      padding: 30px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .spotify-faux h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .spotify-faux p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #d0d0d0;
+    }
+
+    .spotify-link-button {
+      background: #fff;
+      color: #1db954;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      display: inline-block;
     }
 
     .artist-grid {
@@ -105,7 +128,11 @@
 
   <section>
     <h2>Official Playlist</h2>
-    <p>This Is Andrew Aasen — embedded Spotify playlist goes here.</p>
+    <div class="spotify-faux">
+      <h3>This Is Andrew Aasen</h3>
+      <p>A curated selection of genre-warped ambient pop, with a little danger and a lot of silk.</p>
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0kga8K" target="_blank" class="spotify-link-button">Play on Spotify</a>
+    </div>
   </section>
 
   <section>
