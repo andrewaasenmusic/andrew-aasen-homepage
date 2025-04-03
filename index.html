@@ -2,118 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Andrew Aasen</title>
   <style>
     body {
       font-family: 'Georgia', serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
       margin: 0;
       padding: 0;
-      background-color: #000;
-      color: #f5f5f5;
+      text-align: center;
     }
 
     header {
-      text-align: center;
-      padding: 60px 20px 30px;
+      padding: 60px 20px 20px;
     }
 
-    header h1 {
-      font-size: 48px;
+    h1 {
+      font-size: 3em;
       margin: 0;
-      letter-spacing: 2px;
     }
 
     .tagline {
-      font-size: 20px;
-      margin: 10px 0 40px;
-      font-weight: 300;
+      font-size: 1.4em;
+      margin-top: 20px;
     }
 
-    .image-block {
+    section {
+      margin: 60px 20px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .playlist,
+    .artist-link {
+      margin-top: 20px;
+    }
+
+    iframe {
+      border: none;
+    }
+
+    .images {
       display: flex;
       flex-direction: column;
+      gap: 30px;
       align-items: center;
-      gap: 40px;
-      padding: 40px 20px;
+      margin-top: 40px;
     }
 
-    .image-block img {
+    .images img {
       max-width: 90%;
       height: auto;
       border-radius: 12px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
     }
 
-    .spotify-section {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .spotify-section h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .spotify-section iframe {
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    .artist-link {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-
-    .artist-link a {
-      color: #1DB954;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .collective-section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .collective-section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .artist-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .artist-card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .artist-card h3 {
-      margin-top: 0;
-      font-size: 20px;
-    }
-
-    .artist-card p {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 14px;
-      background-color: #000;
+    .about {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.7em;
     }
 
     a {
-      color: #f5f5f5;
+      color: #87cefa;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
     }
   </style>
@@ -122,77 +81,36 @@
 
   <header>
     <h1>ANDREW AASEN</h1>
-    <div class="tagline">
-      Sound doesn’t follow rules. Neither does Andrew Aasen.<br>
-      Producer. Artist. Curator of The Collective. Ambient pop, digital soul, and something slower than trend cycles.
-    </div>
+    <p class="tagline">Sound doesn’t follow rules. Neither does Andrew Aasen.</p>
+    <p>Producer. Artist. Curator of The Collective. Ambient pop, digital soul, and something slower than trend cycles.</p>
   </header>
 
-  <div class="image-block">
-    <img src="https://i.postimg.cc/cvYmzNtd/IMG-9568.png" alt="Andrew Aasen Official Spotify Look" />
-    <img src="https://i.postimg.cc/HrQw24Fx/IMG-0394.webp" alt="Yeah I’m Cute Teaser Image" />
-  </div>
-
-  <div class="spotify-section">
-    <h2>Official Playlist</h2>
-    <p>This Is Andrew Aasen — curated for headphones and jet lag.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0kga8K?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-    <div class="artist-link">
-      <a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc?si=ORzsZ_KkQy2AjolXM1ehAg" target="_blank">
-        Visit My Artist Page on Spotify
-      </a>
-    </div>
-  </div>
-
-  <section id="about" style="padding: 60px 20px; max-width: 800px; margin: auto; text-align: center;">
-    <h2 style="font-size: 28px; margin-bottom: 20px;">About Andrew</h2>
-    <p style="font-size: 16px; line-height: 1.6;">
-      Andrew Aasen blurs the lines between ambient, digital soul, and modern pop. Based between Bend, Kauai, and Paris, he produces for a tight-knit collective of emerging artists and collaborates with high-profile names — sometimes in stealth.  
-      <br><br>
-      With over 1 million streams and a signature style that fuses vulnerability with velocity, Andrew doesn’t just follow trends — he remixes them into something slower, sleeker, and stranger.  
-      <br><br>
-      When he’s not writing or curating sound, you’ll probably find him on a rooftop with flowers, a jetpack idea, and just the right sunglasses.
-    </p>
-  </section>
-
-  <section id="store" style="padding: 60px 20px; background: #111; text-align: center;">
-    <h2 style="font-size: 28px; margin-bottom: 10px;">The Store</h2>
-    <p style="font-size: 16px; color: #ccc;">
-      Limited drops. Signed vinyl. Visuals you can’t unsee.  
-      <br><br>
-      <strong>Coming Spring/Summer 2025</strong>
-    </p>
-    <button style="margin-top: 20px; background-color: #1DB954; color: #000; font-weight: bold; padding: 12px 24px; border: none; border-radius: 6px; cursor: not-allowed;" disabled>
-      Store Opening Soon
-    </button>
-  </section>
-
-  <section class="collective-section">
-    <h2>The Collective</h2>
-    <div class="artist-grid">
-      <div class="artist-card">
-        <h3>Echo</h3>
-        <p>Rapper meets techno sorceress. Glitch-heavy bars with a lucid edge. Signature track: “Glass Skyline”.</p>
-      </div>
-      <div class="artist-card">
-        <h3>Avi Lux</h3>
-        <p>Soft pop, country, and light electronic warmth. Think Lana meets Laurel Canyon. Signature track: “Western Light”.</p>
-      </div>
-      <div class="artist-card">
-        <h3>Big Eddy</h3>
-        <p>Ambient hip-hop and slow-drip swagger. Think cloudy beats, heavy verses. Signature track: “Knuckles in Gold”.</p>
-      </div>
-      <div class="artist-card">
-        <h3>Alexandra Glücksburg</h3>
-        <p>Multilingual dream pop. Echoes of Oslo, whispers of Paris. Signature duet: “Alt Kan Skje”.</p>
-      </div>
+  <section>
+    <div class="section-title">Official Playlist</div>
+    <p>This is Andrew Aasen — embedded Spotify playlist below:</p>
+    <div class="playlist">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0kga8K?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Andrew Aasen. | <a href="mailto:andrewaasen@andrewaasen.com">Contact</a> | <a href="#">Instagram</a> | <a href="#">Spotify</a></p>
-  </footer>
+  <section>
+    <div class="section-title">Artist Page</div>
+    <p class="artist-link"><a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc?si=ORzsZ_KkQy2AjolXM1ehAg" target="_blank">Listen to Andrew Aasen on Spotify</a></p>
+  </section>
+
+  <section class="images">
+    <div class="section-title">Featured Photos</div>
+    <img src="https://i.postimg.cc/cvYmzNtd/IMG-9568.png" alt="Spotify Profile Image">
+    <img src="https://i.postimg.cc/HrQw24Fx/IMG-0394.webp" alt="Yeah I’m Cute Teaser Image">
+  </section>
+
+  <section>
+    <div class="section-title">About</div>
+    <div class="about">
+      Andrew Aasen is a multi-genre producer and artist based between Bend, Oregon, Kaua‘i, and Paris. Known for merging digital soul with ambient pop and subtle techno flavors, Andrew curates The Collective—featuring exclusive artists Echo, Avi Lux, Alexandra Glücksburg, and Big Eddy. <br><br>
+      With over a million streams and a unique vision for independent artistry, he’s redefined what it means to be both creator and curator. From luxe rooftops to moody studios, Andrew's work speaks with bold softness.
+    </div>
+  </section>
 
 </body>
 </html>
