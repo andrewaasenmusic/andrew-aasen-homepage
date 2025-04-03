@@ -70,6 +70,52 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    .collective-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .collective-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .artist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .artist-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .artist-card h3 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .artist-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 14px;
+      background-color: #000;
+    }
+
+    a {
+      color: #f5f5f5;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -98,6 +144,32 @@
       </a>
     </div>
   </div>
+
+  <section class="collective-section">
+    <h2>The Collective</h2>
+    <div class="artist-grid">
+      <div class="artist-card">
+        <h3>Echo</h3>
+        <p>Rapper meets techno sorceress. Glitch-heavy bars with a lucid edge. Signature track: “Glass Skyline”.</p>
+      </div>
+      <div class="artist-card">
+        <h3>Avi Lux</h3>
+        <p>Soft pop, country, and light electronic warmth. Think Lana meets Laurel Canyon. Signature track: “Western Light”.</p>
+      </div>
+      <div class="artist-card">
+        <h3>Big Eddy</h3>
+        <p>Ambient hip-hop and slow-drip swagger. Think cloudy beats, heavy verses. Signature track: “Knuckles in Gold”.</p>
+      </div>
+      <div class="artist-card">
+        <h3>Alexandra Glücksburg</h3>
+        <p>Multilingual dream pop. Echoes of Oslo, whispers of Paris. Signature duet: “Alt Kan Skje”.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Andrew Aasen. | <a href="mailto:andrewaasen@andrewaasen.com">Contact</a> | <a href="#">Instagram</a> | <a href="#">Spotify</a></p>
+  </footer>
 
 </body>
 </html>
