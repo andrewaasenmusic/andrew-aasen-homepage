@@ -15,7 +15,7 @@
     }
 
     header {
-      padding: 60px 20px 20px;
+      padding: 60px 20px 30px;
     }
 
     h1 {
@@ -24,26 +24,21 @@
     }
 
     .tagline {
-      font-size: 1.4em;
-      margin-top: 20px;
+      font-size: 1.3em;
+      margin: 10px 0 30px;
+      color: #ccc;
     }
 
     section {
       margin: 60px 20px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .section-title {
       font-size: 2em;
       margin-bottom: 20px;
-    }
-
-    .playlist,
-    .artist-link {
-      margin-top: 20px;
-    }
-
-    iframe {
-      border: none;
     }
 
     .images {
@@ -58,21 +53,40 @@
       max-width: 90%;
       height: auto;
       border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
     }
 
     .about {
-      max-width: 700px;
-      margin: 0 auto;
       font-size: 1.1em;
-      line-height: 1.7em;
+      line-height: 1.6em;
+      color: #ddd;
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+
+    .spotify-link {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #1DB954;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #777;
     }
 
     a {
-      color: #87cefa;
-      text-decoration: none;
-    }
-
-    a:hover {
+      color: #f5f5f5;
       text-decoration: underline;
     }
   </style>
@@ -81,36 +95,38 @@
 
   <header>
     <h1>ANDREW AASEN</h1>
-    <p class="tagline">Sound doesn’t follow rules. Neither does Andrew Aasen.</p>
+    <p class="tagline">
+      Sound doesn’t follow rules. Neither does Andrew Aasen.
+    </p>
     <p>Producer. Artist. Curator of The Collective. Ambient pop, digital soul, and something slower than trend cycles.</p>
   </header>
 
   <section>
-    <div class="section-title">Official Playlist</div>
-    <p>This is Andrew Aasen — embedded Spotify playlist below:</p>
-    <div class="playlist">
-      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0kga8K?utm_source=generator" width="100%" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-title">Artist Page</div>
-    <p class="artist-link"><a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc?si=ORzsZ_KkQy2AjolXM1ehAg" target="_blank">Listen to Andrew Aasen on Spotify</a></p>
+    <div class="section-title">The A-List</div>
+    <p>Your exclusive playlist featuring Andrew Aasen, Echo, Avi Lux, Alexandra Glücksburg, Big Eddy, and more.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/35N9RKbql15nr1vbNIgIu8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br />
+    <a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc?si=ORzsZ_KkQy2AjolXM1ehAg" target="_blank" class="spotify-link">Visit My Spotify Artist Page</a>
   </section>
 
   <section class="images">
-    <div class="section-title">Featured Photos</div>
+    <div class="section-title">Featured Images</div>
     <img src="https://i.postimg.cc/cvYmzNtd/IMG-9568.png" alt="Spotify Profile Image">
     <img src="https://i.postimg.cc/HrQw24Fx/IMG-0394.webp" alt="Yeah I’m Cute Teaser Image">
   </section>
 
   <section>
-    <div class="section-title">About</div>
+    <div class="section-title">About Andrew</div>
     <div class="about">
-      Andrew Aasen is a multi-genre producer and artist based between Bend, Oregon, Kaua‘i, and Paris. Known for merging digital soul with ambient pop and subtle techno flavors, Andrew curates The Collective—featuring exclusive artists Echo, Avi Lux, Alexandra Glücksburg, and Big Eddy. <br><br>
-      With over a million streams and a unique vision for independent artistry, he’s redefined what it means to be both creator and curator. From luxe rooftops to moody studios, Andrew's work speaks with bold softness.
+      Andrew Aasen is a genre-fluid artist and producer based between Bend, Oregon, Kaua‘i, and Paris. Known for merging digital soul with ambient pop and glitchy elegance, he curates and produces for a growing roster of artists under The Collective — including Echo, Avi Lux, Big Eddy, and Alexandra Glücksburg.  
+      <br><br>
+      With over a million streams and a magnetic creative voice, Andrew blurs the line between high concept and headphones. He doesn’t chase trends — he rewrites them.
     </div>
   </section>
+
+  <footer>
+    &copy; 2025 Andrew Aasen | <a href="mailto:andrewaasen@andrewaasen.com">Email</a> | <a href="#">Instagram</a> | <a href="#">Spotify</a>
+  </footer>
 
 </body>
 </html>
