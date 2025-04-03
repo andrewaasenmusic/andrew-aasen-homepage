@@ -7,125 +7,168 @@
   <style>
     body {
       font-family: 'Georgia', serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+    }
+
+    .header-image {
+      width: 100%;
+      max-height: 600px;
+      object-fit: cover;
     }
 
     header {
-      padding: 60px 20px 30px;
+      text-align: center;
+      padding: 30px 20px 20px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 2.8em;
       margin: 0;
     }
 
     .tagline {
-      font-size: 1.3em;
-      margin: 10px 0 30px;
+      font-size: 1.2em;
+      margin-top: 10px;
       color: #ccc;
     }
 
     section {
-      margin: 60px 20px;
+      padding: 50px 20px;
       max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: auto;
     }
 
     .section-title {
       font-size: 2em;
       margin-bottom: 20px;
+      text-align: center;
     }
 
-    .images {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      align-items: center;
-      margin-top: 40px;
-    }
-
-    .images img {
-      max-width: 90%;
-      height: auto;
+    iframe {
       border-radius: 12px;
-      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+      display: block;
+      margin: 20px auto;
+    }
+
+    .artist {
+      background: #111;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .artist h3 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+
+    .artist p {
+      color: #ccc;
+    }
+
+    .teaser-container {
+      position: relative;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .teaser-container img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .teaser-overlay {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1em;
+      font-style: italic;
     }
 
     .about {
       font-size: 1.1em;
       line-height: 1.6em;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
       color: #ddd;
     }
 
-    iframe {
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    .spotify-link {
-      margin-top: 20px;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #1DB954;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-
     footer {
-      margin-top: 60px;
       padding: 40px 20px;
       font-size: 0.9em;
+      text-align: center;
       color: #777;
-    }
-
-    a {
-      color: #f5f5f5;
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
+  <img src="https://i.postimg.cc/cvYmzNtd/IMG-9568.png" alt="Spotify Banner" class="header-image" />
+
   <header>
     <h1>ANDREW AASEN</h1>
-    <p class="tagline">
-      Sound doesn’t follow rules. Neither does Andrew Aasen.
-    </p>
+    <p class="tagline">Sound doesn’t follow rules. Neither does Andrew Aasen.</p>
     <p>Producer. Artist. Curator of The Collective. Ambient pop, digital soul, and something slower than trend cycles.</p>
   </header>
 
   <section>
-    <div class="section-title">The A-List</div>
-    <p>Your exclusive playlist featuring Andrew Aasen, Echo, Avi Lux, Alexandra Glücksburg, Big Eddy, and more.</p>
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/35N9RKbql15nr1vbNIgIu8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    <br />
-    <a href="https://open.spotify.com/artist/0F6NoFTwnMn5AgC5NHn3gc?si=ORzsZ_KkQy2AjolXM1ehAg" target="_blank" class="spotify-link">Visit My Spotify Artist Page</a>
-  </section>
-
-  <section class="images">
-    <div class="section-title">Featured Images</div>
-    <img src="https://i.postimg.cc/cvYmzNtd/IMG-9568.png" alt="Spotify Profile Image">
-    <img src="https://i.postimg.cc/HrQw24Fx/IMG-0394.webp" alt="Yeah I’m Cute Teaser Image">
+    <div class="section-title">This Is Andrew Aasen</div>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO0kga8K?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </section>
 
   <section>
     <div class="section-title">About Andrew</div>
     <div class="about">
-      Andrew Aasen is a genre-fluid artist and producer based between Bend, Oregon, Kaua‘i, and Paris. Known for merging digital soul with ambient pop and glitchy elegance, he curates and produces for a growing roster of artists under The Collective — including Echo, Avi Lux, Big Eddy, and Alexandra Glücksburg.  
+      Andrew Aasen is a genre-fluid artist and producer based between Bend, Kaua‘i, and Paris. Known for merging digital soul with ambient pop and glitchy elegance, he curates and produces for a growing roster of artists under The Collective — including Echo, Avi Lux, Big Eddy, and Alexandra Glücksburg.
       <br><br>
       With over a million streams and a magnetic creative voice, Andrew blurs the line between high concept and headphones. He doesn’t chase trends — he rewrites them.
     </div>
   </section>
 
+  <section>
+    <div class="section-title">The Collective</div>
+
+    <div class="artist">
+      <h3>Echo</h3>
+      <p><strong>Top Track:</strong> “Late Night Legend”</p>
+    </div>
+
+    <div class="artist">
+      <h3>Avi Lux</h3>
+      <p><strong>Top Tracks:</strong> “Love Like This”, “In The Static”, “Oregon Dreaming”</p>
+    </div>
+
+    <div class="artist">
+      <h3>Big Eddy</h3>
+      <p><strong>Top Tracks:</strong> “Damn I’m Lucky”, “Still My Brother”, “Kim & Me”</p>
+    </div>
+
+    <div class="artist">
+      <h3>Alexandra Glücksburg</h3>
+      <p><strong>Top Track:</strong> “Alt Kan Skje (Duet)”</p>
+    </div>
+
+    <div class="section-title">The A-List</div>
+    <p style="text-align: center;">All Collective members. All Andrew Aasen. One evolving playlist.</p>
+    <iframe src="https://open.spotify.com/embed/playlist/35N9RKbql15nr1vbNIgIu8?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </section>
+
+  <section class="teaser-container">
+    <img src="https://i.postimg.cc/HrQw24Fx/IMG-0394.webp" alt="Teaser with Avi Lux at the Louvre" />
+    <div class="teaser-overlay">Coming Soon: Visual Projects & Behind The Scenes</div>
+  </section>
+
   <footer>
-    &copy; 2025 Andrew Aasen | <a href="mailto:andrewaasen@andrewaasen.com">Email</a> | <a href="#">Instagram</a> | <a href="#">Spotify</a>
+    &copy; 2025 Andrew Aasen | andrewaasen@andrewaasen.com
   </footer>
 
 </body>
